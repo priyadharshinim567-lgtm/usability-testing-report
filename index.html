@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usability Testing Report - StudyFlow</title>
+    <meta name="description" content="Usability Testing Report for StudyFlow, evaluating the experience to identify usability issues and improve the student planning workflow." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Section 1: Hero -->
+    <header class="hero section fade-in">
+      <div class="container text-center">
+        <span class="badge badge-simulated">CODTECH UI/UX INTERNSHIP PROJECT</span>
+        <h1 class="hero-title mt-4 mb-4">Usability Testing Report</h1>
+        <p class="hero-subtitle text-muted mb-8" style="font-size: 1.25rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Evaluating the <strong>StudyFlow</strong> experience to identify usability issues and improve the student planning workflow.
+        </p>
+        <div class="hero-actions" style="display: flex; gap: 1rem; justify-content: center;">
+          <a href="#findings" class="btn btn-primary">View Findings</a>
+          <a href="#process" class="btn btn-outline">Testing Process</a>
+        </div>
+        
+        <!-- Abstract Visual -->
+        <div class="hero-visual mt-8" style="position: relative; max-width: 800px; margin: 3rem auto 0; height: 300px; background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-alt) 100%); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center;">
+          <div style="position: absolute; width: 60%; height: 60%; border-radius: 12px; background: white; box-shadow: var(--shadow-md); top: 10%; left: -5%; opacity: 0.7;"></div>
+          <div style="position: absolute; width: 40%; height: 50%; border-radius: 12px; background: white; box-shadow: var(--shadow-md); bottom: 10%; right: 5%; opacity: 0.9; display: flex; flex-direction: column; padding: 1rem; gap: 0.5rem;">
+            <div style="height: 12px; width: 40%; background: var(--bg-alt); border-radius: 4px;"></div>
+            <div style="height: 8px; width: 80%; background: var(--border-light); border-radius: 4px;"></div>
+            <div style="height: 8px; width: 60%; background: var(--border-light); border-radius: 4px;"></div>
+          </div>
+          <div style="position: absolute; width: 50%; height: 70%; border-radius: 12px; background: white; box-shadow: var(--shadow-lg); z-index: 10; display: flex; flex-direction: column; padding: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+               <div style="height: 16px; width: 100px; background: var(--accent-primary); border-radius: 4px;"></div>
+               <div style="height: 24px; width: 24px; border-radius: 50%; background: var(--accent-light);"></div>
+            </div>
+            <div style="flex: 1; border: 2px dashed var(--accent-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; position: relative;">
+               <div style="position: absolute; top: 30%; left: 40%; width: 20px; height: 20px; border-radius: 50%; background: rgba(239, 68, 68, 0.4); border: 2px solid var(--danger); animation: pulse 2s infinite;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 2: Project Overview -->
+    <section id="overview" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Project Overview</h2>
+          <p class="section-subtitle">Key details of the usability study</p>
+        </div>
+        
+        <div class="grid grid-cols-4 mb-4">
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Role</h4>
+            <p class="font-semibold">UX Researcher / UI/UX Intern</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Product</h4>
+            <p class="font-semibold">StudyFlow</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Project Type</h4>
+            <p class="font-semibold">Usability Testing</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Domain</h4>
+            <p class="font-semibold">Education / Productivity</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Target Users</h4>
+            <p class="font-semibold">College Students</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Testing Method</h4>
+            <p class="font-semibold">Moderated usability testing</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Participants</h4>
+            <p class="font-semibold">6 sample participants</p>
+          </div>
+          <div class="card">
+            <h4 class="text-muted text-sm mb-2">Prototype</h4>
+            <p class="font-semibold">High-fidelity concept</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <p class="text-sm font-semibold" style="color: var(--text-muted); background: var(--bg-alt); display: inline-block; padding: 0.5rem 1rem; border-radius: 4px;">
+            Sample usability study — simulated data for educational/portfolio demonstration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Product Under Test -->
+    <section id="product" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Product Under Test</h2>
+          <p class="section-subtitle">Understanding the StudyFlow concept</p>
+        </div>
+        
+        <div style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px;">
+            <p class="mb-4"><strong>StudyFlow</strong> is a student-focused productivity application designed to help college students manage their academic lives efficiently.</p>
+            <p class="mb-4 text-muted">Key features include managing:</p>
+            <ul class="text-muted" style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-left: 0;">
+              <li>✓ Assignments</li>
+              <li>✓ Exams</li>
+              <li>✓ Deadlines</li>
+              <li>✓ Study sessions</li>
+              <li>✓ Priorities</li>
+              <li>✓ Weekly workload</li>
+              <li>✓ Completion progress</li>
+            </ul>
+          </div>
+          
+          <div style="flex: 1; min-width: 300px; background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div style="background: var(--bg-main); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">TODAY's TASKS</div>
+                <div style="font-weight: 600;">2 Remaining</div>
+              </div>
+              <div style="background: var(--bg-main); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">UPCOMING DEADLINES</div>
+                <div style="font-weight: 600; color: var(--danger);">1 Urgent</div>
+              </div>
+              <div style="background: var(--bg-main); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">STUDY SESSIONS</div>
+                <div style="font-weight: 600; color: var(--accent-primary);">3 Scheduled</div>
+              </div>
+              <div style="background: var(--bg-main); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">WEEKLY PROGRESS</div>
+                <div style="height: 6px; background: var(--border-light); border-radius: 3px; margin-top: 0.5rem; overflow: hidden;">
+                  <div style="width: 65%; background: var(--success); height: 100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Usability Testing Objectives -->
+    <section id="objectives" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Testing Objectives</h2>
+          <p class="section-subtitle">What we aimed to evaluate</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2" style="font-size: 1.25rem;">Objective 01</h3>
+            <p class="text-muted">Determine whether users can understand the dashboard without assistance.</p>
+          </div>
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2" style="font-size: 1.25rem;">Objective 02</h3>
+            <p class="text-muted">Evaluate how easily users can create and prioritize academic tasks.</p>
+          </div>
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2" style="font-size: 1.25rem;">Objective 03</h3>
+            <p class="text-muted">Test whether users can locate upcoming deadlines.</p>
+          </div>
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2" style="font-size: 1.25rem;">Objective 04</h3>
+            <p class="text-muted">Evaluate whether users understand the study scheduling workflow.</p>
+          </div>
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2" style="font-size: 1.25rem;">Objective 05</h3>
+            <p class="text-muted">Identify interaction points that cause confusion, hesitation, or errors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Research Questions -->
+    <section id="research-questions" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Research Questions</h2>
+          <p class="section-subtitle">Guiding the observation process</p>
+        </div>
+        
+        <div class="card" style="background: var(--accent-light); border: none;">
+          <ul style="list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Can users understand the purpose of the dashboard?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Can users add a task without assistance?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Can users identify task priority?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Can users locate upcoming deadlines quickly?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Can users understand how to schedule a study session?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Which interface elements cause hesitation?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Which tasks result in errors?</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-primary); font-size: 1.25rem;">•</span>
+              <span>Which improvements would have the greatest usability impact?</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Testing Methodology -->
+    <section id="process" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Testing Methodology</h2>
+          <p class="section-subtitle">How we conducted the evaluation</p>
+        </div>
+        
+        <div class="mb-8" style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border-light); text-align: center; overflow-x: auto;">
+          <div style="display: inline-flex; align-items: center; gap: 1rem; min-width: max-content;">
+            <div class="font-semibold text-sm">Plan</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm">Recruit</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm">Brief</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm" style="color: var(--accent-primary);">Test</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm">Observe</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm">Analyze</div>
+            <div style="width: 40px; height: 2px; background: var(--border-light);"></div>
+            <div class="font-semibold text-sm">Recommend</div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-3 mb-8">
+          <div>
+            <h4 class="text-muted text-sm mb-2">Testing Type</h4>
+            <p class="font-semibold">Moderated usability testing</p>
+          </div>
+          <div>
+            <h4 class="text-muted text-sm mb-2">Format</h4>
+            <p class="font-semibold">Task-based evaluation</p>
+          </div>
+          <div>
+            <h4 class="text-muted text-sm mb-2">Participants</h4>
+            <p class="font-semibold">6 fictional college students</p>
+          </div>
+          <div>
+            <h4 class="text-muted text-sm mb-2">Session Length</h4>
+            <p class="font-semibold">15–20 minutes</p>
+          </div>
+          <div>
+            <h4 class="text-muted text-sm mb-2">Environment</h4>
+            <p class="font-semibold">Desktop/laptop prototype</p>
+          </div>
+          <div>
+            <h4 class="text-muted text-sm mb-2">Data Collected</h4>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.875rem;" class="text-muted">
+              <li>• Task completion & errors</li>
+              <li>• Completion time</li>
+              <li>• Hesitation & confusion</li>
+              <li>• Comments & satisfaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Participant Profile -->
+    <section id="participants" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Participant Profile</h2>
+          <p class="section-subtitle">Demographics and characteristics of our sample</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">01</div>
+            <h3 class="mb-2">Participant 01</h3>
+            <p class="text-sm text-muted">19 yrs • Heavy workload • Novice to planners</p>
+          </div>
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">02</div>
+            <h3 class="mb-2">Participant 02</h3>
+            <p class="text-sm text-muted">21 yrs • Moderate workload • Tech-savvy</p>
+          </div>
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">03</div>
+            <h3 class="mb-2">Participant 03</h3>
+            <p class="text-sm text-muted">22 yrs • Heavy workload • Experienced planner</p>
+          </div>
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">04</div>
+            <h3 class="mb-2">Participant 04</h3>
+            <p class="text-sm text-muted">18 yrs • Light workload • Novice to planners</p>
+          </div>
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">05</div>
+            <h3 class="mb-2">Participant 05</h3>
+            <p class="text-sm text-muted">20 yrs • Moderate workload • Prefers paper</p>
+          </div>
+          <div class="card text-center" style="padding: 2rem 1.5rem;">
+            <div style="width: 64px; height: 64px; background: var(--bg-alt); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-muted);">06</div>
+            <h3 class="mb-2">Participant 06</h3>
+            <p class="text-sm text-muted">23 yrs • Heavy workload • Tech-savvy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Test Scenarios -->
+    <section id="scenarios" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Test Scenarios</h2>
+          <p class="section-subtitle">The tasks assigned to participants</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card">
+            <h4 class="text-accent text-sm mb-2" style="color: var(--accent-primary); font-weight: 700;">Scenario 1 — Assignment Deadline</h4>
+            <p class="text-muted">"You have received a database assignment that must be submitted next Friday. Add it to StudyFlow and set the appropriate deadline."</p>
+          </div>
+          <div class="card">
+            <h4 class="text-accent text-sm mb-2" style="color: var(--accent-primary); font-weight: 700;">Scenario 2 — Prioritize Task</h4>
+            <p class="text-muted">"You have an assignment due tomorrow and another due next week. Mark the more urgent assignment with the appropriate priority."</p>
+          </div>
+          <div class="card">
+            <h4 class="text-accent text-sm mb-2" style="color: var(--accent-primary); font-weight: 700;">Scenario 3 — Find Deadline</h4>
+            <p class="text-muted">"You want to know which academic deadlines are coming up during the next seven days. Find this information."</p>
+          </div>
+          <div class="card">
+            <h4 class="text-accent text-sm mb-2" style="color: var(--accent-primary); font-weight: 700;">Scenario 4 — Schedule Study Session</h4>
+            <p class="text-muted">"You have an upcoming mathematics exam. Schedule a study session for it."</p>
+          </div>
+          <div class="card">
+            <h4 class="text-accent text-sm mb-2" style="color: var(--accent-primary); font-weight: 700;">Scenario 5 — Track Progress</h4>
+            <p class="text-muted">"You completed your assignment. Mark it as completed and check your current progress."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Task List -->
+    <section id="tasks" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Task List</h2>
+          <p class="section-subtitle">Specific interactions evaluated</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; background: var(--bg-surface); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+            <thead style="background: var(--bg-alt); text-align: left;">
+              <tr>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Task ID</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Task</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Expected Action</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Success Criteria</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); font-weight: 600;">T01</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Add an assignment</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Create task + deadline</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Task successfully appears</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); font-weight: 600;">T02</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Set priority</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Choose priority level</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Priority is clearly displayed</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); font-weight: 600;">T03</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Find deadlines</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Navigate to upcoming deadlines</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">User identifies correct deadline</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); font-weight: 600;">T04</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Schedule study session</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Create study block</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Session appears in schedule</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); font-weight: 600;">T05</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Complete task</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Mark task complete</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--text-muted);">Progress updates correctly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Success Criteria -->
+    <section id="criteria" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Success Criteria Metrics</h2>
+          <p class="section-subtitle">How we measured usability</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div class="card text-center" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm" style="text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Task Completion Rate</h3>
+            <p style="font-size: 0.9rem;">Percentage of participants who complete a task successfully.</p>
+          </div>
+          <div class="card text-center" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm" style="text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Error Rate</h3>
+            <p style="font-size: 0.9rem;">Number of incorrect interactions.</p>
+          </div>
+          <div class="card text-center" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm" style="text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Completion Time</h3>
+            <p style="font-size: 0.9rem;">Time required to complete the task.</p>
+          </div>
+          <div class="card text-center" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm" style="text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Assistance Required</h3>
+            <p style="font-size: 0.9rem;">Whether the participant needed moderator help.</p>
+          </div>
+          <div class="card text-center" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm" style="text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Satisfaction</h3>
+            <p style="font-size: 0.9rem;">Participant rating after completing the task.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Sample Test Results -->
+    <section id="results" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sample Test Results</h2>
+          <p class="section-subtitle">Quantitative performance across tasks</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; background: var(--bg-surface); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); text-align: center;">
+            <thead style="background: var(--bg-alt);">
+              <tr>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left;">Task</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Completion Rate</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Avg. Time</th>
+                <th style="padding: 1rem; border-bottom: 1px solid var(--border-light);">Error Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left; font-weight: 600;">T01 - Add an assignment</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--success); font-weight: 600;">100%</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">32 sec</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">0</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left; font-weight: 600;">T02 - Set priority</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--warning); font-weight: 600;">83%</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">41 sec</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">1</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left; font-weight: 600;">T03 - Find deadlines</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--success); font-weight: 600;">100%</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">25 sec</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">0</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left; font-weight: 600;">T04 - Schedule study session</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--danger); font-weight: 600;">67%</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">68 sec</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">3</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); text-align: left; font-weight: 600;">T05 - Complete task</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light); color: var(--success); font-weight: 600;">100%</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">20 sec</td>
+                <td style="padding: 1rem; border-bottom: 1px solid var(--border-light);">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 12: Observation Data -->
+    <section id="observations" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Observation Data</h2>
+          <p class="section-subtitle">Qualitative behavioral insights</p>
+        </div>
+        
+        <div class="text-center mb-4">
+          <span class="badge badge-simulated" style="background-color: var(--bg-alt); color: var(--text-muted); border: 1px solid var(--border-light);">Simulated observations</span>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card" style="border-left: 4px solid var(--success);">
+            <h4 class="mb-2 text-sm text-muted">Observation 01</h4>
+            <p>Several participants immediately understood the dashboard layout and purpose.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--warning);">
+            <h4 class="mb-2 text-sm text-muted">Observation 02</h4>
+            <p>Some participants hesitated when selecting task priority during task creation.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--success);">
+            <h4 class="mb-2 text-sm text-muted">Observation 03</h4>
+            <p>Participants successfully located upcoming deadlines without issue.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--danger);">
+            <h4 class="mb-2 text-sm text-muted">Observation 04</h4>
+            <p>The study-session scheduling flow caused the most hesitation and highest error rate.</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--warning);">
+            <h4 class="mb-2 text-sm text-muted">Observation 05</h4>
+            <p>Participants expected the calendar icon to directly open the scheduling interface rather than just a view.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 13: User Quotes -->
+    <section id="quotes" class="section fade-in" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">User Feedback</h2>
+          <p class="section-subtitle">What participants said during the sessions</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div style="padding: 2rem; background: var(--bg-main); border-radius: var(--radius-lg); position: relative;">
+            <div style="font-size: 4rem; color: var(--border-light); position: absolute; top: -10px; left: 10px; font-family: serif; line-height: 1;">"</div>
+            <p style="position: relative; z-index: 1; font-style: italic; margin-bottom: 1rem; color: var(--text-main);">I wasn't sure where I should schedule my study session.</p>
+            <p class="text-sm font-semibold" style="color: var(--accent-primary);">Simulated participant quote</p>
+          </div>
+          <div style="padding: 2rem; background: var(--bg-main); border-radius: var(--radius-lg); position: relative;">
+            <div style="font-size: 4rem; color: var(--border-light); position: absolute; top: -10px; left: 10px; font-family: serif; line-height: 1;">"</div>
+            <p style="position: relative; z-index: 1; font-style: italic; margin-bottom: 1rem; color: var(--text-main);">I expected the calendar icon to show my upcoming study blocks.</p>
+            <p class="text-sm font-semibold" style="color: var(--accent-primary);">Simulated participant quote</p>
+          </div>
+          <div style="padding: 2rem; background: var(--bg-main); border-radius: var(--radius-lg); position: relative;">
+            <div style="font-size: 4rem; color: var(--border-light); position: absolute; top: -10px; left: 10px; font-family: serif; line-height: 1;">"</div>
+            <p style="position: relative; z-index: 1; font-style: italic; margin-bottom: 1rem; color: var(--text-main);">The priority option is there, but I didn't notice it immediately.</p>
+            <p class="text-sm font-semibold" style="color: var(--accent-primary);">Simulated participant quote</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 14: Usability Findings -->
+    <section id="findings" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Usability Findings</h2>
+          <p class="section-subtitle">Key issues and insights identified</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card" style="background: var(--bg-main);">
+            <h3 class="mb-2" style="font-size: 1.125rem;">Finding 01 — Study Session Flow Is Difficult to Discover</h3>
+            <p class="text-muted">Users may not immediately understand where study sessions should be created.</p>
+          </div>
+          <div class="card" style="background: var(--bg-main);">
+            <h3 class="mb-2" style="font-size: 1.125rem;">Finding 02 — Priority Controls Lack Visibility</h3>
+            <p class="text-muted">Some users may overlook the priority control when adding a new task.</p>
+          </div>
+          <div class="card" style="background: var(--bg-main);">
+            <h3 class="mb-2" style="font-size: 1.125rem;">Finding 03 — Calendar Expectations</h3>
+            <p class="text-muted">Users expect the calendar to provide a stronger overview of academic activities, including study blocks.</p>
+          </div>
+          <div class="card" style="background: var(--bg-main);">
+            <h3 class="mb-2" style="font-size: 1.125rem;">Finding 04 — Dashboard Is Easy to Understand</h3>
+            <p class="text-muted">Participants generally understand the purpose of the main dashboard instantly.</p>
+          </div>
+          <div class="card" style="background: var(--bg-main);">
+            <h3 class="mb-2" style="font-size: 1.125rem;">Finding 05 — Task Completion Is Straightforward</h3>
+            <p class="text-muted">Marking tasks as complete requires minimal effort and is intuitive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 15: Severity Ratings -->
+    <section id="severity" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Severity Rating</h2>
+          <p class="section-subtitle">Evaluating the impact of identified issues</p>
+        </div>
+        
+        <div class="grid grid-cols-4 mb-8">
+          <div class="card text-center">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--text-muted); margin-bottom: 0.5rem;">1</div>
+            <h4 class="mb-2">Cosmetic</h4>
+            <p class="text-sm text-muted">Minor visual issue.</p>
+          </div>
+          <div class="card text-center">
+            <div style="font-size: 2rem; font-weight: 800; color: #3b82f6; margin-bottom: 0.5rem;">2</div>
+            <h4 class="mb-2">Low</h4>
+            <p class="text-sm text-muted">Small usability inconvenience.</p>
+          </div>
+          <div class="card text-center">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--warning); margin-bottom: 0.5rem;">3</div>
+            <h4 class="mb-2">Moderate</h4>
+            <p class="text-sm text-muted">Causes hesitation or slows task completion.</p>
+          </div>
+          <div class="card text-center">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--danger); margin-bottom: 0.5rem;">4</div>
+            <h4 class="mb-2">High</h4>
+            <p class="text-sm text-muted">Prevents or significantly disrupts task completion.</p>
+          </div>
+        </div>
+        
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+          <ul style="list-style: none; display: grid; gap: 1rem;">
+            <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--bg-main);">
+              <span class="font-semibold">Study session discoverability</span>
+              <span class="badge" style="background: #fef2f2; color: var(--danger); border: 1px solid #fca5a5;">Severity 4</span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--bg-main);">
+              <span class="font-semibold">Priority visibility</span>
+              <span class="badge" style="background: #fffbeb; color: var(--warning); border: 1px solid #fcd34d;">Severity 3</span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--bg-main);">
+              <span class="font-semibold">Calendar expectation mismatch</span>
+              <span class="badge" style="background: #fffbeb; color: var(--warning); border: 1px solid #fcd34d;">Severity 3</span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="font-semibold">Minor spacing issue in task card</span>
+              <span class="badge" style="background: var(--bg-alt); color: var(--text-muted); border: 1px solid var(--border-light);">Severity 1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 16: Issue Prioritization -->
+    <section id="prioritization" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Issue Prioritization</h2>
+          <p class="section-subtitle">Impact vs Frequency Matrix</p>
+        </div>
+        
+        <p class="mb-8 text-muted">Prioritization helps determine which issues should be addressed first during design iteration.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1px; background: var(--border-light); border: 1px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden;">
+          <div style="background: var(--bg-surface); padding: 2rem;">
+            <h4 class="text-muted text-sm mb-4" style="text-transform: uppercase;">High Impact / Low Frequency</h4>
+            <!-- Empty for realism -->
+          </div>
+          <div style="background: #fff5f5; padding: 2rem;">
+            <h4 class="text-sm mb-4" style="text-transform: uppercase; color: var(--danger);">High Impact / High Frequency</h4>
+            <div class="card" style="padding: 1rem; border-left: 4px solid var(--danger); margin-bottom: 1rem;">
+              <strong>Study session discoverability</strong>
+            </div>
+          </div>
+          <div style="background: var(--bg-surface); padding: 2rem;">
+            <h4 class="text-muted text-sm mb-4" style="text-transform: uppercase;">Low Impact / Low Frequency</h4>
+            <div class="card" style="padding: 1rem; border-left: 4px solid var(--border-light);">
+              <strong>Minor spacing issue in task card</strong>
+            </div>
+          </div>
+          <div style="background: #fffbeb; padding: 2rem;">
+            <h4 class="text-sm mb-4" style="text-transform: uppercase; color: var(--warning);">Low Impact / High Frequency</h4>
+            <div class="card" style="padding: 1rem; border-left: 4px solid var(--warning); margin-bottom: 1rem;">
+              <strong>Priority visibility</strong>
+            </div>
+            <div class="card" style="padding: 1rem; border-left: 4px solid var(--warning);">
+              <strong>Calendar expectation mismatch</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 17: Usability Scorecard -->
+    <section id="scorecard" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Usability Scorecard</h2>
+          <p class="section-subtitle">Overall performance at a glance</p>
+        </div>
+        
+        <div class="text-center mb-8">
+          <span class="badge badge-simulated" style="background-color: var(--bg-alt); color: var(--text-muted); border: 1px solid var(--border-light);">Illustrative metrics from simulated usability-testing data</span>
+        </div>
+        
+        <div class="grid grid-cols-4 mb-4" style="gap: 2rem;">
+          <div class="card text-center" style="background: var(--bg-surface);">
+            <h4 class="text-muted text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.05em;">Task Completion</h4>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--success); line-height: 1;">83<span style="font-size: 1.5rem;">%</span></div>
+          </div>
+          <div class="card text-center" style="background: var(--bg-surface);">
+            <h4 class="text-muted text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.05em;">Avg Task Time</h4>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--text-main); line-height: 1;">37<span style="font-size: 1.5rem; color: var(--text-muted);">s</span></div>
+          </div>
+          <div class="card text-center" style="background: var(--bg-surface);">
+            <h4 class="text-muted text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.05em;">Error Rate</h4>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--warning); line-height: 1;">12<span style="font-size: 1.5rem;">%</span></div>
+          </div>
+          <div class="card text-center" style="background: var(--bg-surface);">
+            <h4 class="text-muted text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.05em;">Avg Satisfaction</h4>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--accent-primary); line-height: 1;">4.1<span style="font-size: 1.5rem; color: var(--text-muted);">/5</span></div>
+          </div>
+        </div>
+        <div class="card text-center mb-8" style="background: var(--bg-surface); padding: 1.5rem;">
+            <h4 class="text-muted text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.05em;">Assistance Required</h4>
+            <div style="font-size: 2rem; font-weight: 700; color: var(--success);">Low</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 18: Charts -->
+    <section id="charts" class="section fade-in" style="background: var(--bg-main);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Performance Charts</h2>
+          <p class="section-subtitle">Visualizing the task metrics</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <!-- Task Completion Chart -->
+          <div class="card" style="padding: 2rem;">
+            <h3 class="mb-6 text-sm text-muted" style="text-transform: uppercase;">Task Completion Rate</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; gap: 1rem;">
+                <span class="text-sm font-semibold">T01</span>
+                <div style="height: 12px; background: var(--bg-alt); border-radius: 6px; overflow: hidden;"><div style="width: 100%; height: 100%; background: var(--success);"></div></div>
+                <span class="text-sm">100%</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; gap: 1rem;">
+                <span class="text-sm font-semibold">T02</span>
+                <div style="height: 12px; background: var(--bg-alt); border-radius: 6px; overflow: hidden;"><div style="width: 83%; height: 100%; background: var(--success);"></div></div>
+                <span class="text-sm">83%</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; gap: 1rem;">
+                <span class="text-sm font-semibold">T03</span>
+                <div style="height: 12px; background: var(--bg-alt); border-radius: 6px; overflow: hidden;"><div style="width: 100%; height: 100%; background: var(--success);"></div></div>
+                <span class="text-sm">100%</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; gap: 1rem;">
+                <span class="text-sm font-semibold">T04</span>
+                <div style="height: 12px; background: var(--bg-alt); border-radius: 6px; overflow: hidden;"><div style="width: 67%; height: 100%; background: var(--danger);"></div></div>
+                <span class="text-sm">67%</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; gap: 1rem;">
+                <span class="text-sm font-semibold">T05</span>
+                <div style="height: 12px; background: var(--bg-alt); border-radius: 6px; overflow: hidden;"><div style="width: 100%; height: 100%; background: var(--success);"></div></div>
+                <span class="text-sm">100%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Errors by Task Chart -->
+          <div class="card" style="padding: 2rem;">
+            <h3 class="mb-6 text-sm text-muted" style="text-transform: uppercase;">Errors by Task</h3>
+            <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 150px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light);">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 30px; height: 0px; background: var(--warning); border-radius: 4px 4px 0 0; transition: height 1s ease;" data-height="0"></div>
+                <span class="text-sm font-semibold">T01</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 30px; height: 40px; background: var(--warning); border-radius: 4px 4px 0 0;"></div>
+                <span class="text-sm font-semibold">T02</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 30px; height: 0px; background: var(--warning); border-radius: 4px 4px 0 0;"></div>
+                <span class="text-sm font-semibold">T03</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 30px; height: 120px; background: var(--danger); border-radius: 4px 4px 0 0;"></div>
+                <span class="text-sm font-semibold">T04</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 30px; height: 0px; background: var(--warning); border-radius: 4px 4px 0 0;"></div>
+                <span class="text-sm font-semibold">T05</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 19: Heatmap / Interaction Insights -->
+    <section id="heatmap" class="section fade-in">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Interaction Insights</h2>
+          <p class="section-subtitle">Visualizing areas of user focus</p>
+        </div>
+        
+        <div class="text-center mb-8">
+          <span class="badge badge-simulated" style="background-color: var(--bg-alt); color: var(--text-muted); border: 1px solid var(--border-light);">Illustrative interaction map based on simulated observations — not eye-tracking data</span>
+        </div>
+        
+        <div style="max-width: 800px; margin: 0 auto; background: var(--bg-surface); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); position: relative;">
+          <!-- Mock Dashboard Skeleton -->
+          <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+            <!-- Sidebar -->
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="height: 30px; background: var(--bg-alt); border-radius: 4px; width: 80%;"></div>
+              <div style="height: 20px; background: var(--border-light); border-radius: 4px; width: 100%; margin-top: 1rem;"></div>
+              <div style="height: 20px; background: var(--border-light); border-radius: 4px; width: 90%;"></div>
+              <div style="height: 20px; background: var(--border-light); border-radius: 4px; width: 95%;"></div>
+              
+              <!-- Hotspot: Add Task Button -->
+              <div style="position: relative;">
+                <div style="height: 40px; background: var(--accent-primary); border-radius: 4px; width: 100%; margin-top: 2rem; opacity: 0.5;"></div>
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: radial-gradient(circle, rgba(239,68,68,0.8) 0%, rgba(239,68,68,0) 70%); z-index: 10;"></div>
+              </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="height: 40px; background: var(--bg-alt); border-radius: 4px; width: 40%;"></div>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <!-- Hotspot: Today's Tasks -->
+                <div style="height: 150px; background: var(--bg-main); border-radius: 8px; border: 1px solid var(--border-light); position: relative; overflow: hidden;">
+                  <div style="position: absolute; top: 30%; left: 40%; transform: translate(-50%, -50%); width: 120px; height: 120px; background: radial-gradient(circle, rgba(245,158,11,0.6) 0%, rgba(245,158,11,0) 70%); z-index: 10;"></div>
+                </div>
+                
+                <!-- Hotspot: Upcoming Deadlines -->
+                <div style="height: 150px; background: var(--bg-main); border-radius: 8px; border: 1px solid var(--border-light); position: relative; overflow: hidden;">
+                   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; background: radial-gradient(circle, rgba(239,68,68,0.7) 0%, rgba(239,68,68,0) 70%); z-index: 10;"></div>
+                </div>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1rem;">
+                 <!-- Hotspot: Study Planner / Calendar -->
+                 <div style="height: 200px; background: var(--bg-main); border-radius: 8px; border: 1px solid var(--border-light); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 20%; right: 20%; transform: translate(50%, -50%); width: 90px; height: 90px; background: radial-gradient(circle, rgba(245,158,11,0.5) 0%, rgba(245,158,11,0) 70%); z-index: 10;"></div>
+                 </div>
+                 
+                 <!-- Hotspot: Priority Control (Simulated during task creation) -->
+                 <div style="height: 200px; background: var(--bg-main); border-radius: 8px; border: 1px solid var(--border-light); position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 20%; left: 50%; transform: translate(-50%, 50%); width: 100px; height: 100px; background: radial-gradient(circle, rgba(59,130,246,0.6) 0%, rgba(59,130,246,0) 70%); z-index: 10;"></div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 20: Recommendations -->
+    <section id="recommendations" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Design Recommendations</h2>
+          <p class="section-subtitle">Actionable steps to improve the experience</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm text-muted" style="text-transform: uppercase;">1. Study Session Discoverability</h3>
+            <h4 class="mb-2">Problem</h4>
+            <p class="text-sm text-muted mb-4">Study session scheduling is difficult to discover.</p>
+            <h4 class="mb-2">Recommendation</h4>
+            <p class="text-sm font-semibold mb-4">Make "Schedule Study Session" a clearly visible primary action alongside "Add Task".</p>
+            <h4 class="mb-2">Expected Benefit</h4>
+            <p class="text-sm text-muted">Reduces discovery time and user hesitation.</p>
+          </div>
+          
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm text-muted" style="text-transform: uppercase;">2. Priority Visibility</h3>
+            <h4 class="mb-2">Problem</h4>
+            <p class="text-sm text-muted mb-4">Users overlook the priority dropdown during task creation.</p>
+            <h4 class="mb-2">Recommendation</h4>
+            <p class="text-sm font-semibold mb-4">Use visible priority pill-labels (Low, Med, High) instead of a hidden dropdown.</p>
+            <h4 class="mb-2">Expected Benefit</h4>
+            <p class="text-sm text-muted">Faster task creation and clearer prioritization.</p>
+          </div>
+          
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm text-muted" style="text-transform: uppercase;">3. Calendar Expectations</h3>
+            <h4 class="mb-2">Problem</h4>
+            <p class="text-sm text-muted mb-4">The calendar lacks context and interactivity.</p>
+            <h4 class="mb-2">Recommendation</h4>
+            <p class="text-sm font-semibold mb-4">Allow users to click calendar dates to instantly view or schedule activities.</p>
+            <h4 class="mb-2">Expected Benefit</h4>
+            <p class="text-sm text-muted">Aligns with mental models of calendar interactions.</p>
+          </div>
+          
+          <div class="card" style="border-top: 4px solid var(--accent-primary);">
+            <h3 class="mb-2 text-sm text-muted" style="text-transform: uppercase;">4. Progress Visibility</h3>
+            <h4 class="mb-2">Problem</h4>
+            <p class="text-sm text-muted mb-4">Completed tasks disappear without a sense of accomplishment.</p>
+            <h4 class="mb-2">Recommendation</h4>
+            <p class="text-sm font-semibold mb-4">Add a subtle celebration animation and clear weekly progress bar update.</p>
+            <h4 class="mb-2">Expected Benefit</h4>
+            <p class="text-sm text-muted">Increases user satisfaction and motivation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 21: Before vs After -->
+    <section id="before-after" class="section fade-in" style="background: var(--bg-alt);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Design Evolution</h2>
+          <p class="section-subtitle">Before vs After improvements</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 3rem;">
+          
+          <!-- Comparison 1 -->
+          <div>
+            <h3 class="mb-4 text-center">Study Session Discoverability</h3>
+            <div class="grid grid-cols-2">
+              <div class="card" style="border: 2px dashed var(--danger); opacity: 0.8;">
+                <span class="badge" style="background: var(--danger); color: white;">Before</span>
+                <p class="mt-4 text-muted">Study session option is less visible, hidden in a generic '+' menu.</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-main); border-radius: var(--radius-sm); text-align: center;">
+                  <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-light); margin: 0 auto;"></div>
+                </div>
+              </div>
+              <div class="card" style="border: 2px solid var(--success);">
+                <span class="badge" style="background: var(--success); color: white;">After</span>
+                <p class="mt-4 font-semibold">Add a clearly labelled "Schedule Study Session" action on the main dashboard.</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-main); border-radius: var(--radius-sm); display: flex; gap: 1rem; justify-content: center;">
+                  <div class="btn btn-primary" style="font-size: 0.8rem;">Add Task</div>
+                  <div class="btn btn-outline" style="font-size: 0.8rem; border-color: var(--accent-primary); color: var(--accent-primary);">Schedule Session</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Comparison 2 -->
+          <div>
+            <h3 class="mb-4 text-center">Priority Control Visibility</h3>
+            <div class="grid grid-cols-2">
+              <div class="card" style="border: 2px dashed var(--danger); opacity: 0.8;">
+                <span class="badge" style="background: var(--danger); color: white;">Before</span>
+                <p class="mt-4 text-muted">Priority control is a small grey icon that is easy to overlook.</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-main); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between;">
+                  <span class="text-sm">Task Name</span>
+                  <span style="color: var(--border-light);">🏳️</span>
+                </div>
+              </div>
+              <div class="card" style="border: 2px solid var(--success);">
+                <span class="badge" style="background: var(--success); color: white;">After</span>
+                <p class="mt-4 font-semibold">Use visible priority labels during task creation.</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-main); border-radius: var(--radius-sm); display: flex; gap: 0.5rem; justify-content: center;">
+                  <span class="badge" style="background: #e5e7eb; color: var(--text-muted);">Low</span>
+                  <span class="badge" style="background: #fef08a; color: #854d0e;">Med</span>
+                  <span class="badge" style="background: #fecaca; color: #991b1b;">High</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 22: Design Principles -->
+    <section id="principles" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Design Principles</h2>
+          <p class="section-subtitle">Guidelines established from our findings</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+          <div class="card">
+            <h3 class="mb-2" style="color: var(--accent-primary);">Visibility</h3>
+            <p class="text-sm text-muted">Important actions should be easy to discover. (e.g. Study sessions)</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-2" style="color: var(--accent-primary);">Consistency</h3>
+            <p class="text-sm text-muted">Similar actions should behave consistently across the application.</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-2" style="color: var(--accent-primary);">Recognition</h3>
+            <p class="text-sm text-muted">Users should recognize available actions rather than remember them from hidden menus.</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-2" style="color: var(--accent-primary);">Feedback</h3>
+            <p class="text-sm text-muted">The system should clearly communicate task completion.</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-2" style="color: var(--accent-primary);">Simplicity</h3>
+            <p class="text-sm text-muted">Common actions should require minimal effort and clicks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 23: Traceability (Research -> Finding -> Recommendation) -->
+    <section id="traceability" class="section fade-in" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Research Traceability</h2>
+          <p class="section-subtitle">How observations led to actionable recommendations</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Observation</span><strong>Users hesitate creating sessions.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Finding</span><strong>Action difficult to discover.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">User Need</span><strong>Clear entry point.</strong></div>
+             <div style="color: var(--accent-primary); font-weight: 800;">→</div>
+             <div style="flex: 1.5; min-width: 200px;"><span class="text-sm text-accent block mb-1" style="color: var(--accent-primary);">Recommendation</span><strong>Prominent "Schedule Session" button.</strong></div>
+          </div>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Observation</span><strong>Priority is ignored.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Finding</span><strong>Control lacks visibility.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">User Need</span><strong>Obvious importance scaling.</strong></div>
+             <div style="color: var(--accent-primary); font-weight: 800;">→</div>
+             <div style="flex: 1.5; min-width: 200px;"><span class="text-sm text-accent block mb-1" style="color: var(--accent-primary);">Recommendation</span><strong>Exposed pill selectors.</strong></div>
+          </div>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; background: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Observation</span><strong>Clicking calendar fails.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">Finding</span><strong>Expectation mismatch.</strong></div>
+             <div style="color: var(--border-light);">→</div>
+             <div style="flex: 1; min-width: 150px;"><span class="text-sm text-muted block mb-1">User Need</span><strong>Interactive schedule.</strong></div>
+             <div style="color: var(--accent-primary); font-weight: 800;">→</div>
+             <div style="flex: 1.5; min-width: 200px;"><span class="text-sm text-accent block mb-1" style="color: var(--accent-primary);">Recommendation</span><strong>Make calendar interactive.</strong></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 24: Key Takeaways -->
+    <section id="takeaways" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Key Takeaways</h2>
+          <p class="section-subtitle">Summary of our simulated testing</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="card" style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--accent-light);">01</div>
+            <div>
+              <p class="font-semibold">Users understand the overall dashboard structure.</p>
+            </div>
+          </div>
+          <div class="card" style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--accent-light);">02</div>
+            <div>
+              <p class="font-semibold">Task creation and completion are relatively straightforward.</p>
+            </div>
+          </div>
+          <div class="card" style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--accent-light);">03</div>
+            <div>
+              <p class="font-semibold">Study-session scheduling requires stronger discoverability.</p>
+            </div>
+          </div>
+          <div class="card" style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="font-size: 2rem; font-weight: 800; color: var(--accent-light);">04</div>
+            <div>
+              <p class="font-semibold">Priority controls and calendar expectations need clearer interaction design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-sm text-muted">Results derived from simulated usability testing data.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 25: Reflection -->
+    <section id="reflection" class="section fade-in" style="background: var(--bg-surface);">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header text-center">
+          <h2 class="section-title">Reflection: What I Learned</h2>
+          <p class="section-subtitle">Personal insights from the testing process</p>
+        </div>
+        
+        <div style="font-size: 1.125rem; color: var(--text-muted); line-height: 1.8;">
+          <p class="mb-4">Conducting this usability study highlighted that <strong>usability testing reveals problems that may not be obvious during design</strong>. Watching users perform tasks can reveal interaction problems much more effectively than relying on assumptions.</p>
+          <ul style="margin-left: 2rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>Task completion time and errors provide useful quantitative signals.</li>
+            <li>Qualitative observations help explain <em>why</em> users struggle.</li>
+            <li>Not every usability issue has the same priority; severity matrices are crucial.</li>
+          </ul>
+          <p>Most importantly, findings must be translated into specific design recommendations. Iterative testing is the cornerstone of improving UX.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 26: Conclusion -->
+    <footer class="section fade-in" style="background: var(--text-main); color: white; text-align: center; border-bottom: none;">
+      <div class="container">
+        <h2 class="mb-8" style="color: white; font-size: 2rem;">Usability Testing Process</h2>
+        
+        <div class="grid grid-cols-5 mb-12" style="gap: 1rem;">
+          <div>
+            <h4 style="color: var(--accent-light); margin-bottom: 0.5rem;">Test</h4>
+            <p class="text-sm" style="color: #9ca3af;">Task-based usability evaluation.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--accent-light); margin-bottom: 0.5rem;">Observe</h4>
+            <p class="text-sm" style="color: #9ca3af;">User behavior, errors and hesitation.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--accent-light); margin-bottom: 0.5rem;">Analyze</h4>
+            <p class="text-sm" style="color: #9ca3af;">Identify usability problems and patterns.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--accent-light); margin-bottom: 0.5rem;">Prioritize</h4>
+            <p class="text-sm" style="color: #9ca3af;">Rank issues based on impact and frequency.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--accent-light); margin-bottom: 0.5rem;">Improve</h4>
+            <p class="text-sm" style="color: #9ca3af;">Create actionable UX recommendations.</p>
+          </div>
+        </div>
+        
+        <div style="max-width: 600px; margin: 0 auto 3rem; padding: 2rem; border: 1px solid #374151; border-radius: var(--radius-lg);">
+          <p style="font-size: 1.25rem; font-style: italic; color: #d1d5db;">"Good usability is not about making interfaces look simple. It is about making important tasks feel clear, predictable and effortless."</p>
+        </div>
+        
+        <div style="padding-top: 2rem; border-top: 1px solid #374151; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; color: #9ca3af;">
+          <span>StudyFlow Usability Testing Report</span>
+          <span>CODTECH UI/UX Internship Project • GitHub Portfolio</span>
+        </div>
+      </div>
+    </footer>
